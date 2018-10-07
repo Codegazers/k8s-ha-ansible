@@ -1,4 +1,4 @@
-
+## Based kairen/kubeadm-ansible
 
 ## __Generate New Keys__
 ~~~
@@ -33,6 +33,14 @@ ansible-playbook create_cluster.yml
 vagrant ssh k8s1
 
 kubectl --kubeconfig=/etc/kubernetes/admin.conf get nodes
+
+or
+
+vagrant scp /etc/kubernetes/admin.conf .
+
+export KUBECONFIG=~/admin.conf
+
+kubectl get node
 
 ~~~
 
