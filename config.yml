@@ -1,0 +1,35 @@
+environment:
+  domain: "labs.local"
+  masterip: "10.10.10.11"
+  base_box: "frjaraur/xenial64"
+  base_box_version: "1.4"
+  engine_version: "17.03.2~ce-0~ubuntu-xenial"
+boxes:
+- name: "k8s1"
+  role: "master"
+  mgmt_ip: "10.10.10.11"
+  internal_ip: "192.168.56.11"
+  mem: "3072"
+  cpu: "2"
+
+- name: "k8s2"
+  role: "worker"
+  mgmt_ip: "10.10.10.12"
+  internal_ip: "192.168.56.12"
+  mem: "1524"
+  cpu: "1"
+
+- name: "k8s3"
+  role: "worker"
+  mgmt_ip: "10.10.10.13"
+  internal_ip: "192.168.56.13"
+  mem: "1524"
+  cpu: "1"
+#
+#- name: "k8s4"
+#  role: "worker"
+#  mgmt_ip: "10.10.10.14"
+#  internal_ip: "192.168.56.14"
+#  mem: "1524"
+#  cpu: "1"
+#
