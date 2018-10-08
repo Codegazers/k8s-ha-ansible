@@ -1,5 +1,7 @@
 ## Based kairen/kubeadm-ansible
 
+### __Remember to change permissions on keys to read/write only for your user__
+
 ## __Generate New Keys__
 ~~~
 ssh-keygen -t rsa -N "" -f keys/provision
